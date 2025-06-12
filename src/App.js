@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -7,30 +7,25 @@ import Menu from "./pages/Menu";
 import Order from "./pages/Order";
 import Locations from "./pages/Locations";
 import Contact from "./pages/Contact";
+import Layout from "./Layout";
 
-function Layout() {
-  const location = useLocation();
-  const isHome = location.pathname === "/";
-
+const App =() => {
+  
   return (
     <>
-      {!isHome && <Header />}
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/menu" element={<Menu />} />
-        <Route path="/order" element={<Order />} />
-        <Route path="/locations" element={<Locations />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </>
-  );
-}
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/menu" element={<Menu />} />
+            <Route path="/order" element={<Order />} />
+            <Route path="/locations" element={<Locations />} />
+            <Route path="/contact" element={<Contact />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </>);
+};
 
-export default function App() {
-  return (
-    <Router>
-      <Layout />
-    </Router>
-  );
-}
+export default App;
