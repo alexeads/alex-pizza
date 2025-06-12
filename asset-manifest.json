@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/alex-pizza/static/css/main.72f37b31.css",
+    "main.js": "/alex-pizza/static/js/main.0a3a912a.js",
+    "static/js/453.de5fa1b2.chunk.js": "/alex-pizza/static/js/453.de5fa1b2.chunk.js",
+    "static/media/newyork.jpg": "/alex-pizza/static/media/newyork.50ce596c79cb40cbf57d.jpg",
+    "static/media/miami.jpg": "/alex-pizza/static/media/miami.a88abfbc9b346ab8c612.jpg",
+    "static/media/philly.jpg": "/alex-pizza/static/media/philly.8c004bfee0d30f8dc2f7.jpg",
+    "static/media/columbia.jpg": "/alex-pizza/static/media/columbia.22c171b26eb41d0551ba.jpg",
+    "static/media/la.jpg": "/alex-pizza/static/media/la.34bff4eb5d0367d66877.jpg",
+    "static/media/rob.jpg": "/alex-pizza/static/media/rob.7261ffebba80bb33a059.jpg",
+    "static/media/alex.jpg": "/alex-pizza/static/media/alex.4d081c5e752018ca73f9.jpg",
+    "static/media/csalad.jpg": "/alex-pizza/static/media/csalad.4fb305dbaa6d75296490.jpg",
+    "static/media/hsalad.jpg": "/alex-pizza/static/media/hsalad.a3f7623282f41c7b75b5.jpg",
+    "index.html": "/alex-pizza/index.html",
+    "main.72f37b31.css.map": "/alex-pizza/static/css/main.72f37b31.css.map",
+    "main.0a3a912a.js.map": "/alex-pizza/static/js/main.0a3a912a.js.map",
+    "453.de5fa1b2.chunk.js.map": "/alex-pizza/static/js/453.de5fa1b2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.72f37b31.css",
+    "static/js/main.0a3a912a.js"
+  ]
+}
