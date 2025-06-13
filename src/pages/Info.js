@@ -8,7 +8,7 @@ const Info = () => {
   useEffect(() => {
     const loadData = async () => {
       const response = await axios.get(
-          "http://localhost:3000/api/pizzas"
+          "https://pizza-backend-7ptp.onrender.com/api/pizzas"
       );
       setPizzaInfos(response.data);
     };
