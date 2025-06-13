@@ -4,17 +4,29 @@ import axios from "axios";
 
 const Info = () => {
   const [pizzaInfos, setPizzaInfos] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const loadData = async () => {
-      const response = await axios.get(
+      try {
+        const response = await axios.get(
           "https://pizza-backend-7ptp.onrender.com/api/pizzas"
-      );
-      setPizzaInfos(response.data);
+        );
+        setPizzaInfos(response.data);
+      } catch (err) {
+        setError(err.message || "Error loading data");
+      } finally {
+        setLoading(false);
+      }
     };
 
     loadData();
   }, []);
+
+  if (loading) return <p>Loading pizzas...</p>;
+  if (error) return <p>Error: {error}</p>;
+  if (pizzaInfos.length === 0) return <p>No pizzas found.</p>;
 
   return (
     <div>

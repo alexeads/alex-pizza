@@ -1,7 +1,7 @@
 import "./Pizza.css";
 
 function Pizza(props) {
-  const baseURL = "http://localhost:3000/images/";  // point to backend static image URL
+  const baseURL = "https://pizza-backend-7ptp.onrender.com/images/";  // point to backend static image URL
 
   return (
     <div className="pizza columns">
