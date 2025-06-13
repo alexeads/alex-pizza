@@ -10,6 +10,7 @@ export default function Header() {
     '/order': 'Order',
     '/locations': 'Locations',
     '/contact': 'Contact Us',
+    '/info': 'Info',
     '/about': 'About Us',
   };
 
@@ -36,6 +37,7 @@ export default function Header() {
             <li><Link to="/order">ORDER</Link></li>
             <li><Link to="/locations">LOCATIONS</Link></li>
             <li><Link to="/contact">CONTACT US</Link></li>
+            <li><Link to="/info">INFO</Link></li>
           </ul>
         </nav>
       )}

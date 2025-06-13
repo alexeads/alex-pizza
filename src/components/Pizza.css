@@ -1,0 +1,42 @@
+.pizza-info {
+    background-color: tomato;
+    padding: 0px;
+    margin-bottom: 10px;
+}
+
+.pizza-info img {
+    max-width: 90%;
+}
+
+.pizza {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.feature-image img.pizza-image {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  object-fit: cover;
+}
+
+.info h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.info p {
+  margin: 0.25rem 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+@media screen and (min-width: 600px) {
+    .columns {
+        display: flex;
+    }
+}
