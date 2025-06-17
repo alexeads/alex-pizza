@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Pizza from "../components/Pizza";
 import axios from "axios";
-import PizzaForm from "../components/pizzaForm";
 
 const Info = () => {
   const [pizzaInfos, setPizzaInfos] = useState([]);
@@ -35,10 +34,9 @@ const Info = () => {
     size: "",
     price: "",
     toppings: "",
-    img_name: "pepperoni.jpg", 
+    img_name: "pepperoni.jpg",
   });
 
- 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -60,6 +58,8 @@ const Info = () => {
       img_name: formData.img_name.trim(),
     };
 
+    console.log("Submitting new pizza:", newPizza);  // <-- Debug log
+
     try {
       await axios.post("https://pizza-backend-7ptp.onrender.com/api/pizzas", newPizza);
       setFormSuccess("Pizza added successfully!");
@@ -70,10 +70,12 @@ const Info = () => {
         toppings: "",
         img_name: "pepperoni.jpg",
       });
-      loadData(); 
+      loadData();
     } catch (err) {
-      setFormError(err.response?.data?.message || "Error adding pizza");
-    }
+  console.error("Full error from backend:", err.response);
+  console.error("Error data:", err.response?.data);
+  setFormError(err.response?.data?.error || "Error adding pizza");
+}
   };
 
   if (loading) return <p>Loading pizzas...</p>;

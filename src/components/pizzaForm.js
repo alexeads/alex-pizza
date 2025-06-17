@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-const pizzaForm = () => {
+const PizzaForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     size: "",
@@ -121,4 +121,4 @@ const pizzaForm = () => {
   );
 };
 
-export default pizzaForm;
+export default PizzaForm;
