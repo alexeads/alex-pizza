@@ -58,7 +58,7 @@ const Info = () => {
       img_name: formData.img_name.trim(),
     };
 
-    console.log("Submitting new pizza:", newPizza);  // <-- Debug log
+    console.log("Submitting new pizza:", newPizza);
 
     try {
       await axios.post("https://pizza-backend-7ptp.onrender.com/api/pizzas", newPizza);
@@ -72,10 +72,10 @@ const Info = () => {
       });
       loadData();
     } catch (err) {
-  console.error("Full error from backend:", err.response);
-  console.error("Error data:", err.response?.data);
-  setFormError(err.response?.data?.error || "Error adding pizza");
-}
+      console.error("Full error from backend:", err.response);
+      console.error("Error data:", err.response?.data);
+      setFormError(err.response?.data?.error || "Error adding pizza");
+    }
   };
 
   if (loading) return <p>Loading pizzas...</p>;
