@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/alex-pizza/static/css/main.2cd948ba.css",
-    "main.js": "/alex-pizza/static/js/main.2a5c770c.js",
+    "main.js": "/alex-pizza/static/js/main.c9e3378e.js",
     "static/js/453.de5fa1b2.chunk.js": "/alex-pizza/static/js/453.de5fa1b2.chunk.js",
     "static/media/newyork.jpg": "/alex-pizza/static/media/newyork.50ce596c79cb40cbf57d.jpg",
     "static/media/miami.jpg": "/alex-pizza/static/media/miami.a88abfbc9b346ab8c612.jpg",
@@ -14,11 +14,11 @@
     "static/media/hsalad.jpg": "/alex-pizza/static/media/hsalad.a3f7623282f41c7b75b5.jpg",
     "index.html": "/alex-pizza/index.html",
     "main.2cd948ba.css.map": "/alex-pizza/static/css/main.2cd948ba.css.map",
-    "main.2a5c770c.js.map": "/alex-pizza/static/js/main.2a5c770c.js.map",
+    "main.c9e3378e.js.map": "/alex-pizza/static/js/main.c9e3378e.js.map",
     "453.de5fa1b2.chunk.js.map": "/alex-pizza/static/js/453.de5fa1b2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2cd948ba.css",
-    "static/js/main.2a5c770c.js"
+    "static/js/main.c9e3378e.js"
   ]
 }
